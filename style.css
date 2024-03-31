@@ -1,0 +1,23 @@
+ :root{
+     /*fonts*/
+     --font-family:'Outfit',sans-serif;
+     /*colors*/
+     --main-color:#da6285;
+     --pink-color:#ff8e9d;
+     --pink-opacity:#ffe6e9;
+     --white-alpha-40:rgba(255,255,255,0.40);
+     --white-alpha-25:rgba(255,255,255,0.25);
+     --backdrop-filter: blur(5px);
+     --box-shaow: 2px 2px 5px rgba(0,0,0,0.40);
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        list-style: none;
+    }
+    
