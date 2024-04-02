@@ -1,0 +1,127 @@
+/*-----variable-------*/
+:root {
+    --space: 2rem;
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+    --backdrop-filter: blur(5px);
+    --box-shaow: 2px 2px 5px rgba(0,0,0,0.40);
+}
+body{
+    background-color: #fff1f4;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn{
+    width: fit-content;
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shaow);
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: .8rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 20px;
+    font-weight:bold;
+    cursor:pointer;
+    position: relative;
+}
+.btn:hover::before{
+    transition: all 0.15s ease-in-out;
+}
+.btn:hover{
+    background-color:var(--color-pink);
+    transform: scale(1.10);
+    opacity: 1;
+}
+input[type='submit']{
+    cursor: pointer;
+}
+input[type='submit']:hover{
+    color: var(--main-color);
+}
+
+/*......container........*/
+.form-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4% 0;
+    position: relative;
+}
+.form-container2 form{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shaow);
+    border-radius: .5rem;
+    padding: 2 rem;
+}
+.form-container2 form .flex{
+    display: flex;
+    gap: 1.4rem;
+}
+.form-container2 form .flex .col{
+    flex: 1 1 5rem;
+}
+
+.form-container2 .login{
+    width: 60rem;
+}
+.form-container2 form h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.3rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.form-container2 form p{
+    padding-top: 1.5 rem;
+    font-size: 1.2rem;
+    text-transform: capitalize; 
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+
+}
+.form-container2 form p span{
+    color: red;
+    margin-left: .3rem;
+}
+.form-container2 form .link{
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.form-container2 form .link a{
+    color: var(--main-color);
+}
+.form-container2 form  .link a:hover{
+    color: var(--pink-color);
+    text-decoration: underline;
+}
+.form-container2 form .box{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shaow);
+    width: 90%;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    margin-left: 1.3rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.form-container2 form .btn{
+    width: 90%;
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-bottom: 1.3rem;
+}
