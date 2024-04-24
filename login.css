@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spiny-lobster');
+
 /*-----variable-------*/
 :root {
+    /*fonts*/
+    --font-family: 'Poppins', sans-serif;
+    --Font-family: 'Spiny Lobster', sans-serif;
+
     --space: 2rem;
     --main-color:#da6285;
     --pink-color:#ff8e9d;
@@ -19,7 +26,6 @@ html{
     width: fit-content;
     background-color: var(--white-alpha-25);
     border: 2px solid var(--white-alpha-40);
-    backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shaow);
     text-transform: capitalize;
     color: var(--main-color);
@@ -29,20 +35,16 @@ html{
     font-weight:bold;
     cursor:pointer;
     position: relative;
+    transition: all 0.5s ;
+    font-family: var(--font-family);
+    margin-top: 30px;
 }
-.btn:hover::before{
-    transition: all 0.15s ease-in-out;
-}
+
 .btn:hover{
-    background-color:var(--color-pink);
-    transform: scale(1.10);
+    background-color:var(--main-color);
+    color: var(--pink-opacity);
+    transform: scale(1.03);
     opacity: 1;
-}
-input[type='submit']{
-    cursor: pointer;
-}
-input[type='submit']:hover{
-    color: var(--main-color);
 }
 
 /*......container........*/
@@ -75,21 +77,23 @@ input[type='submit']:hover{
 }
 .form-container2 form h3{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 1.3rem;
     color: var(--main-color);
     text-transform: capitalize;
     font-weight: bolder;
+    font-family: var(--Font-family);
+    letter-spacing: 0.1cap;
 }
 .form-container2 form p{
     padding-top: 1.5 rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize; 
     margin-left: 1.3rem;
     margin-top: 1rem;
     margin-bottom: 5px;
-
+    font-family: var(--font-family);
 }
 .form-container2 form p span{
     color: red;

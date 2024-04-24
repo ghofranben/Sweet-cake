@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spiny-lobster');
+:root{
+     /*fonts*/
+     --font-family: 'Poppins', sans-serif;
+     --Font-family: 'Spiny Lobster', sans-serif;
+     --Font-weight1: 400;
+     --Font-weight2: 600;
+     --Font-weight3: 800;
+     /*colors*/
+     --main-color:#da6285;
+     --pink-color:#ff8e9d;
+     --pink-opacity:#ffe6e9;
+     --white-alpha-40:rgba(255,255,255,0.40);
+     --white-alpha-25:rgba(255,255,255,0.25);
+     --backdrop-filter: blur(5px);
+     --box-shaow: 2px 2px 5px rgba(0,0,0,0.40);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-family);
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 10px 50px;
+    transition: 0.5s;
+}
+.logo > img{
+    width: 100px;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+    color: rgba(0, 0, 0, 0.552);
+}
+.navbar a:hover{
+    background-color: var(--pink-color);
+    border-radius: 5rem;
+    color: white;
+}
+.shop{
+    text-align: center;
+    margin-top: 150px;
+    height: 200px;
+}
+h2{
+    letter-spacing: 0.1cap;
+    font-size: 30px;
+    font-family: var(--Font-family);
+}
+p{
+    margin-top: 20px;
+}
+.shop > button {
+    padding:0.7rem 1.6rem;
+    background-color: white;
+    color: var(--pink-color);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5rem;
+    text-align: center;
+    max-width: 160px;
+    box-shadow: var(--box-shaow);
+    transition: all 0.3s;
+    margin-top: 20px;
+    border: 0px;
+}
+.product{
+    padding-top: 450px;
+    padding-inline: 20px;
+   
+}
+.product-cake{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: -150px;
+}
+.cake > .img{
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding-top: 0%;
+    padding-left: 0%;
+    transition: all .5s;
+}
+.cake > .img:hover{
+    transform: scale(1.05);
+}
+.cake-box1 > .img > img{
+    height: 400px;
+    width: 310px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.cake > .img > h3{
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow:   2px 2px 3px 2px rgb(14 55 54 / 15%);
+    width: 90%;
+    padding-block: 10px;
+    border-radius: 25px;
+    font-weight: 400;
+    transition: all .5S;
+    text-align: center;
+    z-index: 1;
+    margin-top: -100px;
+}
+.orderNow{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.orderNow > a > button {
+    width: 150px;
+    padding-block: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow:   var(--box-shaow);
+    transition: all 0.3s;
+    margin-top: 20px;
+    border: 0px;
+}
+.orderNow > a > button:hover{
+    box-shadow:   0px 0px 0px 0px;
+}
+.edit{
+    background-color: rgb(112, 197, 138);
+    color: rgb(255, 255, 255);
+}
+.delet{
+    background-color: var(--main-color);
+    color: white;
+}
+.shop > button:hover, .cake > .img > h3:hover, .loginregister  > a > button:hover{
+    background-color: var(--pink-color);
+    color: white;
+    box-shadow:   0px 0px 0px 0px;
+}
+h3{
+    font-family: var(--Font-family);
+    letter-spacing: 0.1cap;
+    margin-bottom: 15px;
+}
+.btn{
+    width: fit-content;
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    box-shadow: var(--box-shaow);
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: .3rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 18px;
+    font-weight:bold;
+    cursor:pointer;
+    position: relative;
+    transition: all 0.5s ;
+    font-family: var(--font-family);
+    width: 90%;
+    text-align: center;
+}
+.btn:hover{
+    background-color:var(--main-color);
+    color: var(--pink-opacity);
+    transform: scale(1.03);
+}
+.add , .update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    position:absolute;
+    margin-left: 35%;
+    margin-top: 100px;
+}
+.add > form, .update > form{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shaow);
+    border-radius: .5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+form a{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+form h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.3rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: var(--Font-family);
+    letter-spacing: 0.1cap;
+}
+input{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shaow);
+    width: 90%;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    margin-left: 1.3rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+.massage{
+    display: block;
+    background: var(--pink-opacity);
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 2rem;
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 40px;
+}
