@@ -62,9 +62,9 @@ header{
     font-weight: 500;
     padding: 0.5rem 1rem;
     transition: all 0.3s;
+    color: rgba(0, 0, 0, 0.552);
 }
-.navbar a:hover
-{
+.navbar a:hover{
     background-color: var(--pink-color);
     border-radius: 5rem;
     color: white;
@@ -82,7 +82,6 @@ header{
     padding-inline: 5px;
     background-color: white;
     border-radius: 3px;
-    
 }
 .search > button:hover {
 box-shadow: var(--box-shaow);
@@ -104,6 +103,7 @@ box-shadow: var(--box-shaow);
     place-content: center;
     text-align: center;
     padding-left: 30px;
+    z-index: -1;
 }
 h1{
     max-width: 500px;
@@ -112,7 +112,7 @@ h1{
     font-size: 45px;
     margin-top: 40px;
 }
-.home-page > button{
+.home-page > button {
     padding:0.6rem 1rem;
     background-color: white;
     color: var(--pink-color);
@@ -125,7 +125,7 @@ h1{
     margin-left: 150px;
     transition: all 0.3s;
 }
-.home-page > button:hover, .shop > button:hover, .cake > .img > h3:hover, .orderNow > button:hover{
+.home-page > button:hover, .shop > button:hover, .cake > .img > h3:hover, .orderNow > button:hover, .loginregister  > a > button:hover{
     background-color: var(--pink-color);
     color: white;
     box-shadow:   0px 0px 0px 0px;
@@ -140,7 +140,7 @@ h1{
    }
 
 .AboutUs> div {
-    background-color: var(--pink-color);
+    background-color: #f1a1b8;
     width: 400px;
     height: 180px;
     margin: 20px;
@@ -180,7 +180,6 @@ h2{
 }
 p{
     margin-top: 20px;
-    
 }
 .shop > button {
     padding:0.7rem 1.6rem;
@@ -195,76 +194,7 @@ p{
     transition: all 0.3s;
     margin-top: 20px;
 }
-.product-cake{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    margin-top: 150px;
-}
-.cake > .img{
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-    padding-top: 115%;
-    padding-left: 10%;
-    transition: all .5s;
-}
-.cake > .img:hover{
-    transform: scale(1.05);
-}
-.cake-box1 > .img{
-    background-image: url(./image/cakechoco.jpg);
-}
-.cake-box2 > .img{
-    background-image: url(./image/caketot.jpg);
-}
-.cake-box3 > .img{
-    background-image: url(./image/cakewhit.jpg);
-}
-.cake-box4 > .img{
-    background-image: url(./image/cakecoffe.jpg);
-}
-.cake-box5 > .img{
-    background-image: url(./image/cakebirth.jpg);
-}
-.cake-box6 > .img{
-    background-image: url(./image/cakelove.jpg);
-}
-.cake-box7 > .img{
-    background-image: url(./image/cakebarbie.jpg);
-}
-.cake-box8 > .img{
-    background-image: url(./image/cakemom.jpg);
-}
-.cake > .img > h3{
-    backdrop-filter: var(--backdrop-filter);
-    box-shadow:   2px 2px 3px 2px rgb(14 55 54 / 15%);
-    width: 90%;
-    padding-block: 10px;
-    border-radius: 25px;
-    font-weight: 400;
-    transition: all .5S;
-    text-align: center;
-}
-.orderNow{
-    text-align: center;
-}
-.orderNow > button{
-    width: 90%;
-    padding-block: 10px;
-    background-color: white;
-    color: var(--pink-color);
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 5rem;
-    text-align: center;
-    box-shadow:   var(--box-shaow);
-    transition: all 0.3s;
-    margin-top: 20px;
-}
+
 .footer{
     margin-top: 200px;
     background-color:  var(--pink-opacity);
@@ -363,4 +293,29 @@ p > img{
 }
 .Become > a{
     color: var(--main-color);
+}
+.loginregister{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: 75%;
+    text-align: center;
+    padding-inline: 30px;
+    padding-block: 20px;
+    border-radius: 10px;
+    display: block;
+}
+.loginregister > a > button{
+    padding:0.4rem 0.8rem;
+    background-color: white;
+    color: var(--pink-color);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5rem;
+    text-align: center;
+    margin-right: 5px;
+    max-width: 160px;
+    box-shadow:   var(--box-shaow);
+    transition: all 0.3s;
 }

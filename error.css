@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/spiny-lobster');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    Font-family: 'Spiny Lobster', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./image/notfound.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 700px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 70px;
+    color:#f1a4d3;
+}
+button{
+    margin-top: 30px;
+    padding:0.8rem 1.4rem;
+    background-color: white;
+    color: #f1a4d3;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5rem;
+    text-align: center;
+    max-width: 160px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.40);
+    transition: all 0.3s;
+}
+button:hover{
+    background-color:  #f1a4d3;
+    color: white;
+    box-shadow:   0px 0px 0px 0px;
+}
